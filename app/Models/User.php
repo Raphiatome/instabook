@@ -48,7 +48,11 @@ class User extends Authenticatable
     }
 
     
-
+    /**
+     * Retourne les photos dans lesquelles l'utilisateur apparait
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function photosAppearance()
     {
         return $this->belongsToMany(Photo::class)
@@ -58,9 +62,6 @@ class User extends Authenticatable
     }
 
     
-
-
-
     /**
      * The attributes that are mass assignable.
      *

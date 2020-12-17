@@ -90,7 +90,9 @@ class Photo extends Model
     }
 
     
-
+    /**
+     * Variable assignables
+     */
     protected $fillable =  [
         'title',
         'description',
