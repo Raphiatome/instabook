@@ -97,7 +97,7 @@ class C_SimpleRelationTest extends TestCase
      */
     public function testCommentIsAReplyToAnotherComment()
     {
-        $comment    = Comment::whereNotNull('comment_id')->first();
+        $comment = Comment::whereNotNull('comment_id')->first();
    
         // La réponse à un commentaire est bien un commentaire.
         $this->assertInstanceOf(Comment::class, $comment->replyTo);
