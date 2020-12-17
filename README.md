@@ -69,3 +69,17 @@ Enfin, il faudra intégrer certaines règles de gestions, telles que l'appartena
   - Un commentaire ne peut être que fait que par un utilisateur qui appartient au même groupe que la photo
   - La photo n'est créée que si son propriétaire appartient bien au même groupe que la photo
   - Un utilisateur ne peut être ajouté à une photo que si il est dans le même groupe que la photo
+
+
+### Démarches et difficultés
+
+Dans l'enssemble, le projet était facile.
+
+Voici mes démarches : 
+  - Tout d'abord, j'ai commencé par créer les tables de migration en faisant gaffe aux contraintes des Foreign Key, enverifiant l'ordre d'execution des fichiers, je me suis appuyé sur les tests fournis et le seeder afin de parametrer les bon champs dans la base de données
+  - Ensuite, j'ai créé tous les modèles nécéssaires au bon déroulement des test, précisé les variables, et parametré les events Listeners
+  - Et enfin, faire passer les test. Pour debugger les test qui ne passent pas, j'effectue un test similaire sur le tinker afin d'avoir plus de détail sur le bug pour le résoudre
+
+Difficultés : 
+  - Pour les petits oublis de mémoire je me suis aidé de la documentation Laravel 8 et du TP TODO
+  - Il y a eu une légère accroche lorsqu'il s'agissait de mettre en place les event Listener pour verifier par exemple si un utilisateur appartient au meme groupe que la photo ou il est taggué. Pour y remedier j'ai utilisé la doc de laravel et StackOverFlow afin d'obtenir quelques précisions
