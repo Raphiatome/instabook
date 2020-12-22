@@ -16,7 +16,7 @@ class Photo extends Model
     protected static function booted()
     {
         /**
-         * Met en pause la création du model, vérifie que l'utilisateur est dans le meme groupe que la photo pour commenter
+         * Met en pause la création du model, vérifie que l'utilisateur est dans le groupe pour creer la photo dans ce meme groupe
          * 
          * @param Illuminate\Database\Eloquent\Model;
          * @return boolean;
